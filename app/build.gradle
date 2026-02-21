@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.spbsk.sensor.disabler'
-    compileSdk 35
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.spbsk.sensor.disabler"
-        minSdk 35
-        targetSdk 35
+        minSdk 33
+        targetSdk 34
         versionCode 110
         versionName "11.0"
     }
