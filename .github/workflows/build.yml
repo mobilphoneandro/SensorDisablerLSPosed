@@ -19,8 +19,8 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
       
-    - name: Install Gradle
-      uses: gradle/gradle-build-action@v3
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3
       with:
         gradle-version: '8.10.2'
       
@@ -28,7 +28,4 @@ jobs:
       run: gradle assembleRelease
       
     - name: Upload APK
-      uses: actions/upload-artifact@v4
-      with:
-        name: SensorDisablerLSPosed-v11.0
-        path: app/build/outputs/apk/release/app-release-unsigned.apk
+      uses: actions/upload-artifact@v
