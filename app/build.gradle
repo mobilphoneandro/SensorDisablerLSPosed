@@ -27,10 +27,8 @@ android {
 }
 
 // ДОБАВИТЬ ЭТОТ БЛОК:
-repositories {
-    google()
-    mavenCentral()
-    maven { url 'https://jitpack.io'.trim() }
+dependencies {
+    compileOnly files('libs/XposedBridgeApi-82.jar')
 }
 
 dependencies {
