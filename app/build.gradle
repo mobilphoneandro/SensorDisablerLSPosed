@@ -30,10 +30,9 @@ android {
 repositories {
     google()
     mavenCentral()
-maven { url https://jitpack.io'o}
+maven { url https://jitpack.io' https://jitpack.io 'o}
 }
 
 dependencies {
     compileOnly 'de.robv.android.xposed:api:82'
     compileOnly 'de.robv.android.xposed:api:82:sources'
-}
