@@ -8,10 +8,10 @@ android {
 
     defaultConfig {
         applicationId "com.spbsk.sensor.disabler"
-        minSdk 33
+        minSdk 26
         targetSdk 34
-        versionCode 110
-        versionName "11.0"
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {
@@ -23,9 +23,6 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
-    }
-    lint {
-        checkReleaseBuilds false
     }
 }
 
