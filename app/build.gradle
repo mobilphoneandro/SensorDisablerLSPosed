@@ -27,12 +27,4 @@ android {
 }
 
 // ДОБАВИТЬ ЭТОТ БЛОК:
-repositories {
-google()
-mavenCentral()
-maven { url 'https://jitpack.io' }
-}
-
-dependencies {
-compileOnly 'de.robv.android.xposed:api:82'
-compileOnly 'de.robv.android.xposed:api:82:sources'
+repositories { google() mavenCentral() maven { url 'https://jitpack.io' } } dependencies { compileOnly 'de.robv.android.xposed:api:82' compileOnly 'de.robv.android.xposed:api:82:sources' 
