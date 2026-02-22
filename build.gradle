@@ -1,38 +1,11 @@
-plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace 'com.spbsk.sensor.disabler'
-    compileSdk 34
-
-    defaultConfig {
-        applicationId "com.spbsk.sensor.disabler"
-        minSdk 26
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
+// Top-level build file
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.0'
     }
 }
-
-repositories {
-    google()
-    mavenCentral()
-    maven { url 'https://jitpack.io' }
-}
-
-dependencies {
-    compileOnly 'de.robv.android.xposed:api:82'
-    compileOnly 'de.robv.android.xposed:api:82:sources'
-}
+// БЕЗ allprojects блока!
