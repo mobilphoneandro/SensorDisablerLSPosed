@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.sensor_disabler_lsposed'
+    namespace 'com.spbsk.sensor.disabler'  // ← ИСПРАВИТЬ
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.example.sensor_disabler_lsposed"
+        applicationId "com.spbsk.sensor.disabler"  // ← ИСПРАВИТЬ
         minSdk 24
         targetSdk 35
         versionCode 1
@@ -20,6 +20,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    
+    // Добавить явное указание assets
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets']
+        }
+    }
+    
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
